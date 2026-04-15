@@ -1,30 +1,41 @@
-'''li = []
-ress = [5,4,3,2,1]
-for i in range(len(ress)):
-    if i%2!=0:
-        lm = ress[i]*ress[i]
-        li.append(lm)
-print(li)'''
-"""
-import string
-string  = "python programming"
-print(string *2)
-"""
-"""
+'''1. Square Star Pattern
+n=4
+Output:
+* * * *
+* * * *
+* * * *
+* * * *
+
 n = int(input())
-x = " *"
-for i in range(1,n+1):
-    print(" "*(n-i)+x*i)
-"""
-"""
-n = int(input())
-for i in range(1,n+1):
-    print(" "*(n-i)+"* "*i)
-for i in range(n-1,0,-1):    
-    print(" "*(n-i)+"* "*i)
-    """
-"""
+for i in range(n):
+    for j in range(n):
+        print("*",end=" ")
+    print()
+
+2. Right Angle Triangle
+n=4
+Output:
+*
+* *
+* * *
+* * * *
+
 n = int(input())
 for i in range(1,n+1):
-    print(" "*(n-i)+" ".join([str(j) for j in range(1,i+1)]))
-    """
+    for j in range(i):
+        print("*",end=" ")
+    print()
+
+3. Inverted Triangle
+n=4
+Output:
+* * * *
+* * *
+* *
+*
+'''
+n = int(input())
+for i in range(n):
+    for j in range(n-i,0,-1):
+        print("*",end=" ")
+    print()
