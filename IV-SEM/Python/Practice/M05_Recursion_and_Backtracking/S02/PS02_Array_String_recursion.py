@@ -3,4 +3,6 @@ def Array_sum(nums):
     for i in range(len(nums)-1,-1,-1):
         s += nums[i]
     return s
-print
+def Reverse_String(st):
+    
+    
